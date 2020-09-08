@@ -1,0 +1,337 @@
+ @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+ 
+ /*Sur petit Ecran*/
+ 
+ 
+ @media screen and (max-width: 640px) {
+	
+
+		#bandeauHaut{
+			display: none;
+			visibility : hidden;
+		}
+
+		#titre {
+			font-size: 1rem;
+		}		
+				
+		h4  {
+			font-size: 1rem;	
+		}
+		
+		h5 {
+			font-size: 1rem;
+		}
+		
+		.portrait  {
+			width: 70%;	
+		}
+ }
+ 
+ 
+ /* 1 - MISE EN FORME GENERALE */
+ 
+ 
+				/*Mise en forme du background de la page*/
+			 body {
+				background-color : #FFF;
+				background-repeat : no-repeat;
+				background-attachment : fixed;
+			}
+				 
+			/*Annule le soulignage des liens hypertextes*/
+			
+			a:link{
+				text-decoration:none;
+			}
+			
+			
+			/*Annule la mise en forme des liens hypertextes*/		
+							
+			a {
+				color : black;
+				font-family : Verdana,Geneva,sans-serif;
+				font-size: 1rem;
+			}
+			
+			
+			/*Mise en forme des blocs*/
+
+			#header {
+				padding-top: 1.8%;
+				padding-bottom: 1.8%;			
+			}
+			
+			
+			/*Mise en forme des titres de blocs*/
+
+			.titreRubrique {
+				color : grey;
+				font-weight : 550;
+				font-family : Verdana,Geneva,sans-serif;
+				font-size: 2rem;	
+				padding-top: 2%;
+				padding-bottom: 2%;
+			}
+
+
+			/*Texte des paragraphes justifié*/
+
+			p {
+				text-align: justify;
+				font-family : Verdana,Geneva,sans-serif;
+				font-size: 1rem;	
+			}
+
+			.btn-secondary {
+			background-color : #4DA707;
+			}
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+ /* 2 - MISE EN FORME DU BLOC EN TETE */	 
+ 
+ 				/*Mise en forme du bandeau haut*/
+ 
+			#bandeauHaut{
+				 display: block;
+				 position: fixed;
+				 margin-top: 0%;
+				 top: 0%;
+				 left: 0%;
+				 width: 100%;
+				 height: 11%;
+				 text-indent: 0%;
+				 background-color: #4DA707;
+			}
+ 
+				 
+				/*Mise en forme de l'en tête avec photo foret*/
+				
+			#enTete {
+				margin-top: 4%;
+				padding-bottom: 3%;
+				background-image : url("AA	.jpg");
+				background-color: #EEE;
+				background-size: cover;
+				background-repeat : no-repeat;
+				background-attachment : fixed;
+			}
+
+			
+			/*Annule la mise en forme des liens hypertextes du bandeau et couleur blanche*/
+			
+			.bandeau {
+				text-decoration: none; 
+				color : white;
+			}
+			
+
+			/*Code pour pulsation autour de la photo*/
+
+			.containerPulse {
+			  width: 50%;
+			  height: 100%;
+			  margin: 0 auto 0;
+			}
+
+			.pulse-button {
+			 margin-top: 7%;
+			  position: relative;
+			  width: 30%;
+			  height: 30%;
+			  border: none;
+			  box-shadow: 0 0 0 0 white;
+			  border-radius: 50%;
+			  background-color: #FFF;
+			  background-size:cover;
+			  background-repeat: no-repeat;
+			  cursor: pointer;
+			  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+			  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+			  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+			  animation: pulse 1.25s 10 cubic-bezier(0.66, 0, 0, 1);
+			}
+			.pulse-button:hover 
+			{
+			  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+			}
+
+			@-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px #4DA707;}}
+			@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px #4DA707;}}
+			@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+			@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+
+
+			/*Mise en forme du titre CHARLES PUAUD*/
+
+			#titre {
+				color : white;
+				font-weight : 530;
+				font-size: 4rem;
+				font-family : Verdana,Geneva,sans-serif;
+				padding-top: 3.5%;
+				padding-bottom: 1%;
+			}
+
+
+			/*Mise en forme de l'intitulé de JOB*/
+
+			#titre2 {
+				color : white;
+				font-family : Verdana,Geneva,sans-serif;
+				font-size: 1.5rem;
+				padding-top: 0%;
+				padding-bottom: 1.5%;
+			}
+
+
+			
+			
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+ /* 3 - MISE EN FORME DU BLOC A PROPOS */	 
+
+
+			/* Décalage du bloc à propos */
+
+			#aPropos {
+				padding-top: 7%;
+				padding-bottom: 1%;
+			}
+				
+
+			/*Mise en forme Intitulés Info Générale*/
+
+			.presentation{
+				color : #4DA707;
+				font-weight : 550;
+				font-family : Verdana,Geneva,sans-serif;
+				line-height: 300%
+			}
+
+
+
+			
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+ /* 4 - MISE EN FORME DU BLOC COMPETENCE */	 
+
+
+ 			/* Mise en forme des titres de barre graphiques*/
+ 
+				h4 {
+					color : grey;
+					font-size: 1.2 rem;
+					padding-top: 2.5%;
+					padding-bottom: 1%;
+				}
+
+
+			.date {
+				color: white;
+			}
+
+			.place {
+				color: white;		
+			}
+			
+	 			/* Animation des barres graphiques*/		
+			.progressFill {
+			animation-duration: 2s;
+			animation-name: fillIn;
+			}
+			
+			@keyframes fillIn {
+				  from {
+					width: 0%;
+				  }
+				  50% {
+					width: 50%;
+				  }
+
+				  to {
+					width: 80%;
+				  }
+				}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+ /* 6 - MISE EN FORME DU BLOC PORTFOLIO*/	 
+
+			.card {
+				margin : auto;
+				margin-bottom: 5%;
+			}
+
+ /* ------------------------------------------------------------------------------------------------------------------------- */
+
+
+ /* 7 - MISE EN FORME DU BLOC EXPERIENCES - DIPLOMES - REFERENCES*/	 
+
+ 
+ 			/* Mise en forme des blocs couleurs (violet?)*/
+
+				.col-3 {
+								padding: 50px 0px 30px 0px;
+								margin: -15px 0px -15px 0px;
+								text-align: center;
+								background-color:#4DA707 !important;
+				}
+
+
+ 			/* Mise en forme de la taille de police des listes missions*/
+
+				ul {
+					font-family : Verdana,Geneva,sans-serif;
+					font-size: 1rem;
+				}
+
+
+ 			/* Mise en forme des commentaires référents*/
+
+				q {
+					font-family : Georgia, Serif;
+					font-style: italic;
+					font-size: 1.2rem;
+					padding: 5%;
+					vertical-align: middle;
+				}
+				
+				.citation {
+					padding: 10% 5% 10% 5%;
+				}
+				
+
+				
+			/* Titre fonction des réferents en blanc*/
+			
+				.fonction {
+					color: white;
+				}
+				
+				
+				
+				
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+ /* 8 - MISE EN FORME DU BLOC CONTACTEZ MOI*/	
+
+	
+				#contact {
+					background-image : url("mapLePoire.png");
+					background-color: #EEE;
+					background-size: cover;
+					background-repeat : no-repeat;
+					background-attachment : scroll;
+					background-position: 0%, 20%; 
+				}
+
+				#contactezMoi {
+				padding-top: 5%;
+				padding-bottom: 3%;
+				}
+
+				#titreContact{
+				margin-left: 5%;
+				}

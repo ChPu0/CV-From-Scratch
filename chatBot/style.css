@@ -1,0 +1,140 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+  }
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #4DA707;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 50px;
+  width: 200px;
+}
+
+/* The popup chat WINDOW- hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Container en Tete */
+#enTete {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Titre CharlBot */
+h1 {
+  color: #4DA707;
+  font-size: 1.4em;
+  margin-right: 150px;
+}
+
+
+/* Bouton FERMER */
+.form-container .cancel {
+  background-color: #4DA707;
+  color: white;
+  padding: 4% 4%;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  opacity: 0.8;
+  font-size : 12px;
+  text-align:center;
+  display:block;
+  height: 3px; /*hauteur de ton image*/
+  line-height:3px; /*= height*/
+  background-color: red;
+}
+/* Container for Tchat bubles */
+#fenetreBulles{
+  height: 250px;
+  overflow-y : scroll;
+}
+
+/* Textarea */
+.form-container input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 80px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Bouton ENVOI */
+.form-container .btn {
+  background-color: #4DA707;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:15px;
+  opacity: 0.8;
+}
+
+
+.container {
+  display: flex; /* or inline-flex */
+  flex-wrap: wrap;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  background-color: #4DA707;
+}
+
+/* Bulle utilisateur */
+p  {
+  width: 70%;
+  background: #4DA707;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9em;
+  padding : 5px 8px;
+  margin-left : 60px;
+}
+
+/* Bulle CharlBot */
+h2  {
+  width: 70%;
+  background: red;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.9em;
+  padding : 5px 8px;
+}
